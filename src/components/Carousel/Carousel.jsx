@@ -56,9 +56,9 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="w-full h-[80vh] bg-gray-100 py-16 border border-black">
+    <div className="w-full h-[80vh] bg-sky-50 py-16 border border-black">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-slate-200 mb-8">Services we offer</h2>
+        <h2 className="text-3xl font-bold text-center text-sky-100 mb-8">Services we offer</h2>
         <Slider {...settings}>
           {cards.map((card, index) => (
             <div key={index} className="p-4 group">

@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Section id="aboutUs" bgColor="bg-white" className="pt-12 border">
+      <Section id="aboutUs"  className=" h-screen pt-12 border">
         <div className="flex flex-col md:flex-row items-center justify-around w-full h-full">
           {/* Left Side */}
           <div className="w-2/3 space-y-6 px-10 ">
@@ -42,12 +42,27 @@ function App() {
         </div>
       </Section>
 
-      <Section id='services' className=''>
+      <Section id='services'className='h-[200vh]'>
         <div>
           <Carousel></Carousel>
         </div>
+        <div className="h-screen flex items-center justify-around border border-black">
+          <div className="max-w-xl">
+            <p className='text-4xl text-slate-800 inline-block border border-black leading-relaxed'>Leading companies trust us <span className='font-bold'>to develop software</span></p>
+
+            <p className='text-xl leading-8 text-slate-950 inline-block pt-10'>At RDK Technologies, we enhance tech teams with top-tier development capacity, ensuring comprehensive support throughout the project lifecycle. As a premier custom software development company, we don't just build teams—we guarantee the successful delivery of your project from start to finish.</p>
+
+            <div className='pt-10'>
+              <div className='text-xl bg-custom-gradient text-transparent bg-clip-text '>See more Informations<div>arrow sign here</div></div>
+              
+            </div>
+          </div>
+          <div className="max-h-full">
+            <img src="Rectangle_9.png" alt="logo"/>
+          </div>
+        </div>
       </Section>
-      <Section id='caseStudies'>
+      <Section id='caseStudies' className='h-[]border border-black'>
         <div>
           <h1 className='text-center'>Case Studies Section</h1>
         </div>
@@ -62,7 +77,7 @@ function App() {
           <h1 className='text-center'>Work Section</h1>
         </div>
       </Section>
-      <Section id='hire'>
+      <Section id='hire' className=''>
         <div>
           <h1 className='text-center'>Hire Section</h1>
         </div>

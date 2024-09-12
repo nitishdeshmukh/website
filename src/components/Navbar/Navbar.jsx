@@ -21,7 +21,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="hover:text-sky-800">
-          <Link to="case-studies" smooth={true} duration={500} className="cursor-pointer">
+          <Link to="caseStudies" smooth={true} duration={500} className="cursor-pointer">
             Case Studies
           </Link>
         </li>
@@ -31,8 +31,13 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="hover:text-sky-800">
-          <Link to="contact" smooth={true} duration={500} className="cursor-pointer">
-            Contact Us
+          <Link to="howItWorks" smooth={true} duration={500} className="cursor-pointer">
+            How it Works
+          </Link>
+        </li>
+        <li className="hover:text-sky-800">
+          <Link to="hire" smooth={true} duration={500} className="cursor-pointer">
+            Hire
           </Link>
         </li>
       </ul>
