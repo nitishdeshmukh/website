@@ -14,8 +14,6 @@ const Carousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    // nextArrow: false,
-    // prevArrow: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -60,14 +58,14 @@ const Carousel = () => {
   return (
     <div className="w-full h-[80vh] bg-gray-100 py-16 border border-black">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-8">Services we offer</h2>
+        <h2 className="text-3xl font-bold text-center text-slate-200 mb-8">Services we offer</h2>
         <Slider {...settings}>
           {cards.map((card, index) => (
-            <div key={index} className="p-4">
-              <div className="h-full bg-white shadow-md rounded-lg p-6 flex flex-col justify-between transform hover:-translate-y-2 transition duration-300">
-                <div className="w-20 h-20 rounded-full bg-custom-gradient p-[3px]">
+            <div key={index} className="p-4 group">
+              <div className="h-full bg-white shadow-md rounded-lg p-6 flex flex-col justify-between transform hover:translate-y-3 transition duration-300 border-2 border-transparent group-hover:border-sky-700">
+                <div className="w-16 h-16 rounded-full bg-white p-[2px] border-2 border-sky-700">
                   <div className="flex items-center justify-center w-full h-full bg-white rounded-full">
-                    <img src="Code_logo.png" alt="Logo" className="w-10 h-12 rounded-full" />
+                    <img src="Code_logo.png" alt="Logo" className="w-9 h-9" />
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-gray-800">{card.title}</h3>
