@@ -1,86 +1,44 @@
-import React, { useState, useEffect } from 'react';
-import Button  from '../Button';
+import React from 'react';
 import { Link } from 'react-scroll';
+import Button from '../Button';
 
 const Navbar = () => {
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    setScrolled(offset > 100);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <nav
-      className='fixed w-full flex justify-between items-center border p-3 shadow-lg'
-    >
-      <div className=" text-lg font-bold">Company-Logo</div>
-      <ul className="flex space-x-6">
-        <li>
-          <Link
-            to="aboutUs"
-            smooth={true}
-            duration={500}
-            className="text-lg cursor-pointer text-gray-700"
-          >
-            About us
+    <nav className="relative top-0 w-full bg-white shadow-md z-50 flex justify-between items-center px-8 py-4">
+      <div className="logo">
+        <img src="logo.png" alt="Logo" className="w-32" />
+      </div>
+
+      <ul className="flex space-x-8 text-lg font-semibold">
+        <li className="hover:text-sky-800">
+          <Link to="about" smooth={true} duration={500} className="cursor-pointer">
+            About Us
           </Link>
         </li>
-        <li>
-          <Link
-            to="services"
-            smooth={true}
-            duration={500}
-            className="text-lg cursor-pointer text-gray-700"
-          >
+        <li className="hover:text-sky-800">
+          <Link to="services" smooth={true} duration={500} className="cursor-pointer">
             Services
           </Link>
         </li>
-        <li>
-          <Link
-            to="caseStudies"
-            smooth={true}
-            duration={500}
-            className=" text-lg cursor-pointer text-gray-700"
-          >
+        <li className="hover:text-sky-800">
+          <Link to="case-studies" smooth={true} duration={500} className="cursor-pointer">
             Case Studies
           </Link>
         </li>
-        <li>
-          <Link
-            to="blog"
-            smooth={true}
-            duration={500}
-            className="text-lg cursor-pointer text-gray-700"
-          >
+        <li className="hover:text-sky-800">
+          <Link to="blog" smooth={true} duration={500} className="cursor-pointer">
             Blog
           </Link>
         </li>
-        <li>
-          <Link
-            to="howItWorks"
-            smooth={true}
-            duration={500}
-            className="text-lg cursor-pointer text-gray-700"
-          >
-            How it Works
+        <li className="hover:text-sky-800">
+          <Link to="contact" smooth={true} duration={500} className="cursor-pointer">
+            Contact Us
           </Link>
         </li>
-        <li>
-          <Link
-            to="hire"
-            smooth={true}
-            duration={500}
-            className="text-lg cursor-pointer text-gray-700"
-          >
-            Hire
-          </Link>
-        </li> 
       </ul>
-      <Button className='text-sm font-medium'>Contact us</Button>
+
+
+      <Button>Contact Us</Button>
     </nav>
   );
 };
