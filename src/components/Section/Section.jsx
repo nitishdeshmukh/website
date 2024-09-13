@@ -8,7 +8,7 @@ export default function Section({
     ...props
 }) {
     return (
-        <section className={`h-screen ${bgColor} ${textColor} ${className}`} {...props}>
+        <section className={`${bgColor} ${textColor} ${className}`} {...props}>
             {children}
         </section>
     );
