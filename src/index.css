@@ -2,21 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* button.slick-arrow.slick-next {
-    background: linear-gradient(225deg, #00A1F1 0%, #004589 100%) !important;
+.feedback-slide {
+    transition: opacity 0.3s ease, transform 0.3s ease !important;
+    opacity: 0.5 !important; 
 }
 
-.slick-dots li.slick-active button {
-    background: linear-gradient(225deg, #00A1F1 0%, #004589 100%) !important;
-    position: relative; 
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer;
+.swiper-slide-active {
+    opacity: 1 !important; 
+    transform: scale(1.05) !important; 
+    padding-top: 2rem !important;
 }
-
-.slick-dots li button {
-    background: #ccc !important;
-} */

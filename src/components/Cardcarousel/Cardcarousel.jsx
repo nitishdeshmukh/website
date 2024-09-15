@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 const Cardcarousel = () => {
   const settings = {
     centerMode: true,
-    centerPadding: '60px',  
+    centerPadding: '180px',  
     dots: true,
     infinite: true,
     speed: 500,
@@ -57,7 +57,7 @@ const Cardcarousel = () => {
 
   return (
     <div className="w-full h-[80vh] bg-sky-50 py-16 border border-black">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-8xl mx-auto">
         <h2 className="text-3xl font-bold text-center text-sky-100 mb-8">Services we offer</h2>
         <Slider {...settings}>
           {cards.map((card, index) => (

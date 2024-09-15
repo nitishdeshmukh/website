@@ -1,16 +1,16 @@
 import './App.css'
-import { Button, Footer, Navbar, Section, Cardcarousel, Logocarousel } from './components'
+import { Button, Footer, Navbar, Section, Cardcarousel, Logocarousel, Clientfeedback, CaseStudies, DesignApproach } from './components'
 
 function App() {
   return (
     <>
       <Navbar />
-      <Section id="aboutUs" className="min-h-screen pt-12 border">
+      <Section id="aboutUs" className="min-h-screen pt-12">
         <div className="flex flex-col lg:flex-row items-center justify-around w-full h-full">
           {/* Left Side */}
           <div className="w-full p-6 lg:w-3/5 lg:px-5">
           <div>
-              <div className="text-3xl lg:text-6xl  border space-x-2">
+              <div className="text-3xl lg:text-6xl space-x-2">
                 <span className='font-light'>Exceptional</span>
                 
                 <span className="bg-custom-gradient text-transparent bg-clip-text font-bold inline-block">
@@ -45,7 +45,7 @@ function App() {
         </div>
       </Section>
 
-      <Section id='services'className='h-[210vh]'>
+      <Section id='services'className='h-[310vh]'>
         <div>
           <Cardcarousel></Cardcarousel>
         </div>
@@ -71,11 +71,12 @@ function App() {
           </div>
         </div>
         <Logocarousel></Logocarousel>
+        <Clientfeedback></Clientfeedback>
       </Section>
 
-      <Section id='caseStudies' className='h-screen text-center border border-black'>
+      <Section id='caseStudies' className=' text-center border border-black'>
         <div>
-          <h1 className='text-center'>Case Studies Section</h1>
+          <CaseStudies></CaseStudies>
         </div>
       </Section>
       <Section id='blog' className='h-screen text-center border border-black'>
@@ -83,12 +84,10 @@ function App() {
           <h1 className='text-center'>Blog Section</h1>
         </div>
       </Section>
-      <Section id='howItWorks' className='h-screen text-center border border-black'>
-        <div>
-          <h1 className='text-center'>Work Section</h1>
-        </div>
+      <Section id='howItWorks' className='h-[210vh] text-center border border-black'>
+        <DesignApproach></DesignApproach>
       </Section>
-      <Section id='hire' className='h-screen text-center border border-black'>
+      <Section id='hire' className='h-[] text-center border border-black'>
         <div>
           <h1 className='text-center'>Hire Section</h1>
         </div>
