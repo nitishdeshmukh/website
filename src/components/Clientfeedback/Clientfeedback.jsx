@@ -65,12 +65,13 @@ const Clientfeedback = () => {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center min-h-screen bg-gray-50 px-4">
+        <div className="flex flex-col justify-center items-center min-h-screen bg-white px-4">
             <div className="text-center w-full max-w-screen-lg">
-                <h2 className="text-3xl mb-4">
-                    Why customers love <br /> 
-                    <span className="font-bold">working with us</span>
-                </h2>
+                <div>
+                    <h2 className="text-4xl leading-relaxed block">Why customers love</h2>
+                    <span className="text-4xl font-bold leading-relaxed">working with us</span>
+                </div>
+                
                 <p className="text-gray-600 mb-6 max-w-lg mx-auto leading-relaxed mt-16">
                     {activeFeedback} 
                 </p>

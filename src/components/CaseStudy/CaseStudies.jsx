@@ -25,9 +25,9 @@ const caseStudies = [
 const CaseStudies = () => {
   return (
     <div className="bg-white">
-      <div className="border border-red-800">
+      <div className='text-center pt-16'>
         <span className="text-4xl block leading-relaxed">Our recent</span>  
-        <h1 className="text-4xl font-bold text-center mb-10 leading-relaxed">Case studies</h1> 
+        <h1 className="text-4xl font-bold leading-relaxed">Case studies</h1> 
       </div>
       <div className="flex flex-col w-full py-10 px-16">
         {caseStudies.map((caseStudy, index) => (

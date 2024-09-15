@@ -7,6 +7,9 @@ import Logocarousel from "./Logocarousel/Logocarousel";
 import Clientfeedback from "./Clientfeedback/Clientfeedback"
 import CaseStudies from "./CaseStudy/CaseStudies";
 import DesignApproach from "./DesignApproach";
+import TechStack from "./TechStack";
+import AlkalineDevelopment from "./AlkalineDevelopment";
+import FeaturedResources from "./FeaturedResources";
 export {
     Navbar,
     Footer,
@@ -17,4 +20,7 @@ export {
     Clientfeedback,
     CaseStudies,
     DesignApproach,
+    TechStack,
+    AlkalineDevelopment,
+    FeaturedResources,
 }

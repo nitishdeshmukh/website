@@ -1,5 +1,5 @@
 import './App.css'
-import { Button, Footer, Navbar, Section, Cardcarousel, Logocarousel, Clientfeedback, CaseStudies, DesignApproach } from './components'
+import { Button, Footer, Navbar, Section, Cardcarousel, Logocarousel, Clientfeedback, CaseStudies, DesignApproach,TechStack, AlkalineDevelopment, FeaturedResources} from './components'
 
 function App() {
   return (
@@ -84,12 +84,21 @@ function App() {
           <h1 className='text-center'>Blog Section</h1>
         </div>
       </Section>
-      <Section id='howItWorks' className='h-[210vh] text-center border border-black'>
+      <Section id='howItWorks' className='h-[380vh]'>
         <DesignApproach></DesignApproach>
+        <TechStack></TechStack>
+        <AlkalineDevelopment></AlkalineDevelopment>
+        <FeaturedResources></FeaturedResources>
       </Section>
-      <Section id='hire' className='h-[] text-center border border-black'>
-        <div>
-          <h1 className='text-center'>Hire Section</h1>
+      <Section id='hire' className='h-[50vh] flex justify-center items-center'>
+        <div className='container rounded-xl bg-sky-50 h-2/3 flex justify-around items-center'>
+          <div className='font-bold'>
+            <span className='text-3xl block leading-relaxed'>Hire the best developers and</span>
+            <span className='text-3xl block leading-relaxed'>designers around!</span> 
+          </div>
+          <div>
+            <button className='bg-orange-400 text-white px-6 py-2 rounded-sm'>Hire Top Developers</button>
+          </div>
         </div>
       </Section>
       <Footer />
