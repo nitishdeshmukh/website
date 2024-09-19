@@ -10,6 +10,7 @@ import DesignApproach from "./DesignApproach";
 import TechStack from "./TechStack";
 import AlkalineDevelopment from "./AlkalineDevelopment";
 import FeaturedResources from "./FeaturedResources";
+import Card from "./Card";
 export {
     Navbar,
     Footer,
@@ -23,4 +24,5 @@ export {
     TechStack,
     AlkalineDevelopment,
     FeaturedResources,
+    Card
 }

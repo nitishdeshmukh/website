@@ -1,5 +1,5 @@
 import './App.css'
-import { Button, Footer, Navbar, Section, Cardcarousel, Logocarousel, Clientfeedback, CaseStudies, DesignApproach,TechStack, AlkalineDevelopment, FeaturedResources} from './components'
+import { Button, Footer, Navbar, Section, Cardcarousel, Logocarousel, Clientfeedback, CaseStudies, DesignApproach,TechStack, AlkalineDevelopment, FeaturedResources, Card} from './components'
 
 function App() {
   return (
@@ -49,12 +49,12 @@ function App() {
         <div>
           <Cardcarousel></Cardcarousel>
         </div>
-        <div className="min-h-screen flex flex-col lg:flex-row items-center justify-around border border-black p-4 lg:p-8">
-          <div className="max-w-xl w-full lg:w-1/2 space-y-6">
-          <p className="w-full text-2xl lg:text-4xl text-slate-800 inline-block">
-            Leading companies trust us <span className="block font-bold">to develop software</span>
-          </p>
-
+        <div className="min-h-screen flex flex-col lg:flex-row items-center justify-around p-4 lg:p-8">
+          <div className="max-w-xl w-full lg:w-1/2 space-y-6 leading-loose">
+          <div>
+            <span className="text-2xl sm:text-3xl md:text-4xl block">Leading companies trust us</span>
+            <span className="text-2xl sm:text-3xl md:text-4xl font-bold block">to develop software</span>
+          </div>
             <p className="text-base lg:text-xl leading-8 text-slate-950 inline-block pt-6 lg:pt-10">
               At RDK Technologies, we enhance tech teams with top-tier development capacity, ensuring comprehensive support throughout the project lifecycle. As a premier custom software development company, we don't just build teams—we guarantee the successful delivery of your project from start to finish.
             </p>
@@ -79,10 +79,8 @@ function App() {
           <CaseStudies></CaseStudies>
         </div>
       </Section>
-      <Section id='blog' className='h-screen text-center border border-black'>
-        <div>
-          <h1 className='text-center'>Blog Section</h1>
-        </div>
+      <Section id='blog' className='h-[250vh]'>
+        <Card/>
       </Section>
       <Section id='howItWorks' className='h-[380vh]'>
         <DesignApproach></DesignApproach>
@@ -90,16 +88,23 @@ function App() {
         <AlkalineDevelopment></AlkalineDevelopment>
         <FeaturedResources></FeaturedResources>
       </Section>
-      <Section id='hire' className='h-[50vh] flex justify-center items-center'>
-        <div className='container rounded-xl bg-sky-50 h-2/3 flex justify-around items-center'>
-          <div className='font-bold'>
-            <span className='text-3xl block leading-relaxed'>Hire the best developers and</span>
-            <span className='text-3xl block leading-relaxed'>designers around!</span> 
+      <Section id='hire' className=' h-auto md:h-[50vh] flex justify-center items-center'>
+        <div className='container mx-auto px-4 py-8 bg-sky-50 rounded-xl h-auto md:h-2/3 flex flex-col md:flex-row justify-center md:justify-around items-center'>
+          <div className='text-center md:text-left mb-6 md:mb-0'>
+            <span className='text-2xl md:text-3xl font-bold block leading-relaxed'>
+              Hire the best developers and
+            </span>
+            <span className='text-2xl md:text-3xl font-bold block leading-relaxed'>
+              designers around!
+            </span>
           </div>
           <div>
-            <button className='bg-orange-400 text-white px-6 py-2 rounded-sm'>Hire Top Developers</button>
+            <button className='bg-orange-400 text-white px-4 py-2 rounded-sm text-sm md:text-base'>
+              Hire Top Developers
+            </button>
           </div>
         </div>
+
       </Section>
       <Footer />
     </>
