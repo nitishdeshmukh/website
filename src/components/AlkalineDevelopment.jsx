@@ -35,7 +35,7 @@ const steps = [
 
 const AlkalineDevelopment = () => {
     return (
-        <div className="pt-10 bg-sky-50">
+        <div className="pt-10 bg-sky-50 h-screen">
             {/* Title Section */}
             <div className="text-center mb-10 px-4">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-relaxed">How development</h2>
@@ -43,23 +43,39 @@ const AlkalineDevelopment = () => {
             </div>
 
             {/* Steps Section */}
-            <div className="px-4">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {/* Apply grid-template-areas to handle odd and even positioning */}
-                    <div className="md:grid md:grid-rows-2 md:grid-cols-3 md:gap-12">
-                        {steps.map((step, index) => (
-                            <div
-                                key={step.id}
-                                className={`bg-white p-6 rounded-lg shadow-md ${index % 2 === 0 ? 'md:row-start-1 md:col-start-' + ((index / 2) + 1) : 'md:row-start-2 md:col-start-' + (index / 2 + 1)}`}
-                            >
-                                <h3 className="text-blue-600 font-bold text-lg sm:text-xl mb-4">
-                                    #{step.id} {step.title}
-                                </h3>
-                                <p className="text-gray-600 text-sm sm:text-base">{step.description}</p>
-                            </div>
-                        ))}
+            <div className="relative px-4 max-w-6xl mx-auto">
+            {/* Timeline */}
+            <div className="absolute w-full top-1/2 transform -translate-y-1/2 h-1 bg-blue-600"></div>
+
+            {/* Odd Steps (First Row - Left Aligned) */}
+            <div className="flex justify-start mb-10">
+                {steps.filter(step => step.id % 2 !== 0).map((step) => (
+                <div key={step.id} className="w-full px-2">
+                    <div className="bg-white p-4 rounded-lg shadow-md border">
+                    <div className="flex items-center justify-start mb-2">
+                        <h3 className="text-blue-600 font-bold text-lg sm:text-xl">#{step.id}</h3>
+                        <h4 className="text-lg font-semibold ml-2">{step.title}</h4>
+                    </div>
+                    <p className="text-gray-600 text-base">{step.description}</p>
                     </div>
                 </div>
+                ))}
+            </div>
+
+            {/* Even Steps (Second Row - Right Aligned) */}
+            <div className="flex self-end">
+                {steps.filter(step => step.id % 2 === 0).map((step) => (
+                <div key={step.id} className="w-full px-2">
+                    <div className="bg-white p-4 rounded-lg shadow-md border">
+                        <div className="flex items-center justify-start mb-2">
+                            <h3 className="text-blue-600 font-bold text-lg sm:text-xl">#{step.id}</h3>
+                            <h4 className="text-lg font-semibold ml-2">{step.title}</h4>
+                        </div>
+                    <p className="text-gray-600 text-base">{step.description}</p>
+                    </div>
+                </div>
+                ))}
+            </div>
             </div>
         </div>
     );

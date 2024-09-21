@@ -1,5 +1,5 @@
 import './App.css'
-import { Button, Footer, Navbar, Section, Cardcarousel, Logocarousel, Clientfeedback, CaseStudies, DesignApproach,TechStack, AlkalineDevelopment, FeaturedResources, Card} from './components'
+import { Button, Footer, Navbar, Section, Cardcarousel, Logocarousel, Clientfeedback, CaseStudies, DesignApproach,TechStack, AlkalineDevelopment, FeaturedResources, Card, BackToTop} from './components'
 
 function App() {
   return (
@@ -107,6 +107,7 @@ function App() {
 
       </Section>
       <Footer />
+      <BackToTop/>
     </>
   )
 }

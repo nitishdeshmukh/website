@@ -11,6 +11,7 @@ import TechStack from "./TechStack";
 import AlkalineDevelopment from "./AlkalineDevelopment";
 import FeaturedResources from "./FeaturedResources";
 import Card from "./Card";
+import BackToTop from "./BackToTop";
 export {
     Navbar,
     Footer,
@@ -24,5 +25,6 @@ export {
     TechStack,
     AlkalineDevelopment,
     FeaturedResources,
-    Card
+    Card,
+    BackToTop
 }
