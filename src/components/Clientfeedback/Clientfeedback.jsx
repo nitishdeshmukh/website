@@ -9,49 +9,49 @@ const Clientfeedback = () => {
 
     const feedbackData = [
         {
-            name: 'Joint',
+            name: 'Rema',
             role: 'Jonet Cosmetics',
             rating: 5,
             feedback: '1Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t hesitate to introduce their work to someone else.',
             image: 'https://randomuser.me/api/portraits/women/50.jpg'
         },
         {
-            name: 'Sutta',
+            name: 'Tom',
             role: 'Software Engineer',
             rating: 3,
             feedback: '2Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t hesitate to introduce their work to someone else.',
             image: 'https://randomuser.me/api/portraits/men/60.jpg'
         },
         {
-            name: 'Ganja',
+            name: 'Sara',
             role: 'Jonet Cosmetics',
             rating: 5,
             feedback: '3Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t hesitate to introduce their work to someone else.',
             image: 'https://randomuser.me/api/portraits/women/51.jpg'
         },
         {
-            name: 'Sasta Nasha',
+            name: 'Sam',
             role: 'Software Engineer',
             rating: 4,
             feedback: '4Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t hesitate to introduce their work to someone else.',
             image: 'https://randomuser.me/api/portraits/men/61.jpg'
         },
         {
-            name: 'drugs',
+            name: 'Jara',
             role: 'Jonet Cosmetics',
             rating: 4.5,
             feedback: '5Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t hesitate to introduce their work to someone else.',
             image: 'https://randomuser.me/api/portraits/women/52.jpg'
         },
         {
-            name: 'steroids',
+            name: 'Tom',
             role: 'Software Engineer',
             rating: 5,
             feedback: '6Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t hesitate to introduce their work to someone else.',
             image: 'https://randomuser.me/api/portraits/men/62.jpg'
         },
         {
-            name: 'chai',
+            name: 'Travis',
             role: 'Software Engineer',
             rating: 5,
             feedback: '6Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t hesitate to introduce their work to someone else.',
@@ -81,7 +81,7 @@ const Clientfeedback = () => {
                         modules={[Autoplay, Mousewheel]}  
                         spaceBetween={10}  
                         slidesPerView={1}  
-                        mousewheel={true}
+                        mousewheel={false}
                         centeredSlides={true}
                         loop={true}
                         autoplay={{ 

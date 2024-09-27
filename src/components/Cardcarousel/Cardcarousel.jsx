@@ -56,9 +56,13 @@ const Cardcarousel = () => {
   ];
 
   return (
-    <div className="w-full h-[80vh] bg-sky-50 py-16 border border-black">
+    <div className="w-full h-[80vh] bg-custom-bg bg-opacity-60 py-16">
       <div className="max-w-8xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-sky-100 mb-8">Services we offer</h2>
+      <h2 className="text-4xl font-bold text-center text-custom-blue mb-8 relative">
+        <span className="absolute inset-0 opacity-20 rounded"></span>
+        Services we offer
+      </h2>
+
         <Slider {...settings}>
           {cards.map((card, index) => (
             <div key={index} className="p-4 group">

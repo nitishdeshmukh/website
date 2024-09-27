@@ -12,6 +12,7 @@ import AlkalineDevelopment from "./AlkalineDevelopment";
 import FeaturedResources from "./FeaturedResources";
 import Card from "./Card";
 import BackToTop from "./BackToTop";
+import AboutUs from "./AboutUs";
 export {
     Navbar,
     Footer,
@@ -26,5 +27,6 @@ export {
     AlkalineDevelopment,
     FeaturedResources,
     Card,
-    BackToTop
+    BackToTop,
+    AboutUs
 }

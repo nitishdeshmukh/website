@@ -6,12 +6,15 @@ export default {
   ],
   theme: {
       extend: {
+        colors: {
+          'custom-bg': '#E4F0F8',
+          'custom-blue': '#5382A1',
+          'custom-gradiant-border':'linear-gradient(225deg, #005398 0%, #00A7F7 100%)',
+        },
         backgroundImage: {
           'custom-gradient': 'linear-gradient(225deg, #005398 0%, #00A7F7 100%)',
-          'bg1': 'linear-gradient(225deg, #29272E%200%,%20#27272E%20100%)',
-        },
-        borderGradient: {
-          'gradient': 'linear-gradient(225deg, #005398 0%, #00A7F7 100%)', 
+          'custom-gradient-btn': 'linear-gradient(225deg, #FFC656 0%, #F16063 100%)',
+
         },
       },
   },
