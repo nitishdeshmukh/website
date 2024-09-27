@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="py-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-start items-start">
+        <div className="flex flex-col md:flex-row justify-stretch items-center">
 
           {/* Left Section */}
           <div className="text-center md:text-left mb-6 md:mb-0 mx-10">
@@ -20,26 +20,25 @@ const Footer = () => {
             </address>
 
             {/* Social Media Icons */}
-            <div className="flex justify-center space-x-4 mt-4">
+            <div className="flex justify-center md:justify-start space-x-4 mt-4">
               <a href="https://facebook.com" className="p-3 rounded-full shadow-lg hover:shadow-xl transition-shadow">
-                <img src="/facebook.png" alt="Facebook" className=" max-w-full object-contain" />
+                <img src="/facebook.png" alt="Facebook" className="max-w-fit object-contain" />
               </a>
               <a href="https://instagram.com" className="p-3 rounded-full shadow-lg hover:shadow-xl transition-shadow">
-                <img src="/instagram.png" alt="Instagram" className=" max-w-full object-contain" />
+                <img src="/instagram.png" alt="Instagram" className="max-w-fit object-contain" />
               </a>
               <a href="https://twitter.com" className="p-3 rounded-full shadow-lg hover:shadow-xl transition-shadow">
-                <img src="/twitter.png" alt="Twitter" className=" max-w-full object-contain" />
+                <img src="/twitter.png" alt="Twitter" className="max-w-fit object-contain" />
               </a>
               <a href="https://linkedin.com" className="p-3 rounded-full shadow-lg hover:shadow-xl transition-shadow">
-                <img src="/linkedin.png" alt="LinkedIn" className=" max-w-full object-contain" />
+                <img src="/linkedin.png" alt="LinkedIn" className="max-w-fit object-contain" />
               </a>
             </div>
-
           </div>
 
           {/* Right Section */}
-          <div className="text-left mt-8 md:mt-0 ml-60">
-            <ul className="space-y-2 font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#00A1F1] to-[#004589]">
+          <div className="text-center mt-8 md:mt-0 md:ml-16 lg:ml-20">
+            <ul className="text-left space-y-2 font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#00A1F1] to-[#004589]">
               <li className='text-sky-950'>Links</li>
               <li><a href="#about">About Us</a></li>
               <li><a href="#services">Services</a></li>
