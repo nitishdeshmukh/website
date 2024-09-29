@@ -19,8 +19,9 @@ const CaseStudyCard = ({ image, title, description }) => {
           <p className="text-gray-600 mt-10 mb-4 flex-grow leading-relaxed">{description}</p>
         </div>
         <div className="self-end mt-8">
-          <a href="#" className="text-blue-500 font-semibold">
+          <a href="#" className="flex items-center bg-custom-gradient text-transparent bg-clip-text text-xl font-semibold">
             Read more
+            <img src="./Vector4.png" alt="arrow" className="ml-2" />
           </a>
         </div>
       </div>

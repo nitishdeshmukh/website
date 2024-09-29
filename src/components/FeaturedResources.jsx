@@ -77,28 +77,29 @@ const FeaturedResources = () => {
   return (
     <div className="w-full h-auto py-16">
       <div className="max-w-full">
-        <div className="text-center mb-10">
-          <span className="text-4xl block leading-relaxed">Featured</span>
-          <span className="text-4xl font-bold leading-relaxed">Resources</span>
+        <div className="text-center pt-16 flex flex-col justify-center items-center pb-10">
+          <div className="bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5 mb-10"></div>
+          <span className="text-2xl md:text-3xl lg:text-4xl block leading-relaxed">Featured</span>
+          <h1 className="text-4xl font-bold leading-relaxed">Resources</h1>
         </div>
         <Slider {...settings}>
           {resources.map((resource, index) => (
             <div key={index} className="px-12">
-              <div className="overflow-hidden">
+              <div className="overflow-hidden flex flex-col justify-center items-center">
                 <img
                   src={resource.image}
                   alt={resource.title}
-                  className="w-full h-40 object-cover rounded-lg" 
+                  className="w-auto object-cover rounded-lg" 
                 />
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                <div>
+                  <h3 className="text-lg text-gray-800 mb-2 pt-4 px-3">
                     {resource.title}
                   </h3>
-                  <a
-                    href={resource.link}
-                    className="text-sky-600  text-base self-end"
-                  >
-                    Read More 
+                </div>
+                <div className="self-end flex mt-4 justify-end mr-4">
+                  <a href="#" className="flex items-center bg-custom-gradient text-transparent bg-clip-text text-base font-bold">
+                    Read More
+                    <img src="./Vector.png" alt="arrow" className="ml-2" />
                   </a>
                 </div>
               </div>

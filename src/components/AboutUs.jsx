@@ -6,14 +6,14 @@ const AboutUs = () => {
         <div className='mt-14 lg:mt-40'>
             <div className="flex flex-col lg:flex-row items-center justify-center w-full h-full">
                 {/* Left Side */}
-                <div className="max-w-2xl lg:ml-14 m-5">
+                <div className="max-w-3xl lg:ml-14">
                     <div>
-                        <p className="text-2xl lg:text-5xl text-start space-y-1">
+                        <p className="text-2xl lg:text-6xl text-start space-y-1">
                             <span className='font-light leading-normal mr-4'>Exceptional</span>
                             <span className="bg-custom-gradient text-transparent bg-clip-text font-extrabold inline-block leading-normal mr-4">Product</span>
                             <span className='font-light inline-block leading-normal'>starts</span>
                         </p>
-                        <p className="text-2xl lg:text-5xl text-start space-y-1">
+                        <p className="text-2xl lg:text-6xl text-start space-y-1">
                             <span className="font-extrabold leading-normal mr-4">with</span>
                             <span className="font-extrabold leading-normal mr-4">Exceptional</span>
                             <span className="bg-custom-gradient text-transparent bg-clip-text font-extrabold leading-normal">teams</span>

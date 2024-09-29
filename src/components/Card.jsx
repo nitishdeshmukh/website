@@ -5,7 +5,7 @@ const Card = () => {
     {
       image: "./Frame1.png", // Replace with actual image URL
       title: "Build the right team to scale",
-      description: "Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long-term.",
+      description: "Finding the right talent is not easy. We help you find talent that suits your needs, follows your processes, and sticks with you long-term (which is not the case with freelancers).",
       quote: "Symform is quick to identify larger problems with the software as we decided to expand our scope to build new modules.",
       author: { 
         name: "Jeeva Markram", 
@@ -16,7 +16,7 @@ const Card = () => {
     {
       image: "./Frame2.png", // Replace with actual image URL
       title: "Build the right team to scale",
-      description: "Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long-term.",
+      description: "Finding the right talent is not easy. We help you find talent that suits your needs, follows your processes, and sticks with you long-term (which is not the case with freelancers).",
       quote: "Symform is quick to identify larger problems with the software as we decided to expand our scope to build new modules.",
       author: { 
         name: "Jeeva Markram", 
@@ -27,7 +27,7 @@ const Card = () => {
     {
       image: "./Frame3.png", // Replace with actual image URL
       title: "Build the right team to scale",
-      description: "Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long-term.",
+      description: "Finding the right talent is not easy. We help you find talent that suits your needs, follows your processes, and sticks with you long-term (which is not the case with freelancers).",
       quote: "Symform is quick to identify larger problems with the software as we decided to expand our scope to build new modules.",
       author: { 
         name: "Jeeva Markram", 
@@ -38,20 +38,20 @@ const Card = () => {
   ];
 
   return (
-    <div className="mx-auto px-4 py-12 lg:px-10">
+    <div className="mx-auto px-4 py-12 lg:px-10 ">
       {/* Header */}
-      <div className="text-center mb-12">
-        <span className="text-2xl sm:text-3xl md:text-4xl block leading-relaxed">Way of building</span>
-        <span className="text-2xl sm:text-3xl md:text-4xl font-bold block leading-relaxed">Great Software</span>
+      <div className='text-center pt-16 flex flex-col justify-center items-center pb-5'>
+        <div className='bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5 mb-10'>
+        </div>
+        <span className="text-4xl block leading-relaxed">Way of building</span>
+        <h1 className="text-4xl font-bold leading-relaxed">Great Software</h1>
       </div>
 
       {/* Card List */}
       {cards.map((card, index) => (
         <div
           key={index}
-          className={`flex flex-col mb-10 items-start justify-start sm:justify-around sm:mb-16 ${
-            index % 2 === 0 ? "" : "md:flex-row-reverse"
-          } md:flex-row`}
+          className={`flex flex-col mb-10 items-start justify-start sm:justify-around sm:mb-16 ${index % 2 === 0 ? "" : "md:flex-row-reverse"} md:flex-row`}
         >
           {/* Image */}
           <img
@@ -59,15 +59,24 @@ const Card = () => {
             alt="Card"
             className="w-full sm:w-3/4 md:w-2/5 rounded-lg mb-6 sm:mb-0"
           />
-          
+
           {/* Text and Author */}
-          <div className="w-full md:w-2/5 md:ml-6 pt-4 md:pt-0 text-start leading-loose">
+          <div className="w-full lg:w-2/6 lg:ml-6 pt-4 lg:pt-0 text-start" >
             <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold">{card.title}</h3>
-            <p className="my-4 sm:my-6 text-gray-700 text-sm sm:text-base md:text-lg">{card.description}</p>
-            <blockquote className="text-sky-600 font-semibold px-3 text-sm sm:text-lg italic">
-              "{card.quote}"
-            </blockquote>
-            
+            <p className="my-4 sm:my-6 text-gray-700 text-sm sm:text-base lg:text-lg leading-loose">{card.description}</p>
+            <p className='my-4 sm:my-6 text-gray-700 text-sm sm:text-base lg:text-lg'>
+            Our <span className='bg-custom-gradient text-transparent bg-clip-text'>delivery model</span> helps you cut costs and deliver within budget.
+            </p>
+            {/* Quote with a line */}
+            <div className="flex items-start">
+              <div
+                className="mx-2 h-20 w-1.5" style={{ background: 'linear-gradient(225deg, #00A1F1 0%, #004589 100%)',}}
+              ></div>
+              <blockquote className="text-sky-600 font-light text-lg italic">
+                "{card.quote}"
+              </blockquote>
+            </div>
+
             {/* Author section in row (responsive) */}
             <div className="mt-4 sm:mt-6 flex flex-row items-center">
               <img

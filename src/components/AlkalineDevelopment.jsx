@@ -37,9 +37,10 @@ const AlkalineDevelopment = () => {
     return (
         <div className="pt-10 bg-sky-50 h-screen">
             {/* Title Section */}
-            <div className="text-center mb-10 px-4">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-relaxed">How development</h2>
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-relaxed">through Alkaline works</h1>
+            <div className="text-center pt-16 pb-16 flex flex-col justify-center items-center pb-5">
+                <div className="bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5 mb-10"></div>
+                <span className="text-2xl md:text-3xl lg:text-4xl block leading-relaxed">How development</span>
+                <h1 className="text-4xl font-bold leading-loose">through Alcaline works</h1>
             </div>
 
             {/* Steps Section */}
@@ -53,7 +54,7 @@ const AlkalineDevelopment = () => {
                 <div key={step.id} className="w-full px-2">
                     <div className="bg-white p-4 rounded-lg shadow-md border">
                     <div className="flex items-center justify-start mb-2">
-                        <h3 className="text-blue-600 font-bold text-lg sm:text-xl">#{step.id}</h3>
+                        <h3 className="bg-custom-gradient text-transparent bg-clip-text font-bold text-lg text-xl">#{step.id}</h3>
                         <h4 className="text-lg font-semibold ml-2">{step.title}</h4>
                     </div>
                     <p className="text-gray-600 text-base">{step.description}</p>
@@ -68,7 +69,7 @@ const AlkalineDevelopment = () => {
                 <div key={step.id} className="w-full px-2">
                     <div className="bg-white p-4 rounded-lg shadow-md border">
                         <div className="flex items-center justify-start mb-2">
-                            <h3 className="text-blue-600 font-bold text-lg sm:text-xl">#{step.id}</h3>
+                            <h3 className="bg-custom-gradient text-transparent bg-clip-text font-bold text-lg text-xl">#{step.id}</h3>
                             <h4 className="text-lg font-semibold ml-2">{step.title}</h4>
                         </div>
                     <p className="text-gray-600 text-base">{step.description}</p>

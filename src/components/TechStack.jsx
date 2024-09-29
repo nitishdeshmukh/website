@@ -9,23 +9,59 @@ const techStack = [
   { name: 'Python', img: './Python.png', category: 'Backend' },
   { name: 'Rails', img: './RubyOnRails.png', category: 'Backend' },
   { name: 'Golang', img: './Go.png', category: 'Backend' },
-  { name: 'MongoDB', img: './mongodb.png', category: 'Databases' }
+  { name: 'MongoDB', img: './mongodb.png', category: 'Databases' },
 ];
 
 const categories = ['Backend', 'Frontend', 'Databases', 'CMS', 'Cloud Testing', 'DevOps'];
 
 const TechStack = () => {
   const [selectedCategory, setSelectedCategory] = useState('Backend');
-
+  const defaultRowPattern = [5, 4, 3]; 
   const filteredTechStack = techStack.filter((tech) => tech.category === selectedCategory);
+
+  const generateDynamicRowPattern = (totalItems) => {
+    const basePattern = [5, 4, 3];
+    let dynamicPattern = [];
+    let remainingItems = totalItems;
+
+    while (remainingItems > 0) {
+      for (let i = 0; i < basePattern.length; i++) {
+        if (remainingItems <= 0) break; 
+        dynamicPattern.push(Math.min(basePattern[i], remainingItems)); 
+        remainingItems -= basePattern[i];
+      }
+    }
+
+    return dynamicPattern;
+  };
+
+  const rowPattern = generateDynamicRowPattern(filteredTechStack.length); 
+
+  const splitIntoRows = (items, rowPattern) => {
+    let rows = [];
+    let currentIndex = 0;
+
+    for (let i = 0; i < rowPattern.length; i++) {
+      const numItemsInRow = rowPattern[i];
+      const row = items.slice(currentIndex, currentIndex + numItemsInRow);
+      rows.push(row);
+      currentIndex += numItemsInRow;
+    }
+
+    return rows;
+  };
+
+  const techRows = splitIntoRows(filteredTechStack, rowPattern);
 
   return (
     <div className="container mx-auto text-center pt-10 mb-24 px-4 sm:px-6 lg:px-8">
-      <div className="mb-8">
-        <span className='text-2xl sm:text-3xl md:text-4xl block leading-relaxed'>Our</span>
-        <p className="text-2xl sm:text-3xl md:text-4xl font-bold leading-relaxed">Tech Stack</p>
+      {/* Header Section */}
+      <div className="text-center pt-16 flex flex-col justify-center items-center pb-5">
+        <div className="bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5 mb-10"></div>
+        <span className="text-2xl md:text-3xl lg:text-4xl block leading-relaxed">Our</span>
+        <h1 className="text-4xl font-bold leading-relaxed">Tech Stack</h1>
       </div>
-      
+
       {/* Category Selection */}
       <div className="flex justify-center space-x-4 mb-8 sm:mb-10 lg:mb-12 flex-wrap">
         {categories.map((category) => (
@@ -33,7 +69,7 @@ const TechStack = () => {
             key={category}
             onClick={() => setSelectedCategory(category)}
             className={`text-base sm:text-lg md:text-xl font-semibold px-2 py-1 cursor-pointer ${
-              selectedCategory === category ? 'border-b-2 sm:border-b-4 border-sky-600' : 'border-b-2 border-transparent'
+              selectedCategory === category ? 'border-b-2 lg:border-b-4 border-sky-600' : 'border-b-2 border-transparent'
             }`}
           >
             {category}
@@ -43,22 +79,25 @@ const TechStack = () => {
 
       {/* Display Filtered Tech Stack */}
       <div className='flex justify-center items-center'>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
+        <div className="flex flex-col justify-center items-center flex-wrap gap-6">
           {filteredTechStack.length > 0 ? (
-            filteredTechStack.map((tech, index) => (
-              <div
-                key={index}
-                className="flex justify-center items-center border border-gray-300 p-2 sm:p-4 rounded"
-              >
-                <img
-                  src={tech.img}
-                  alt={tech.name}
-                  className="max-h-16 sm:max-h-20 md:max-h-24 lg:max-h-28 max-w-full object-contain"
-                />
-              </div>
-            ))
+            <>
+              {techRows.map((row, rowIndex) => (
+                <div key={rowIndex} className="flex gap-6 flex-wrap justify-center mt-4">
+                  {row.map((tech, index) => (
+                    <div key={index} className="flex flex-col justify-center items-center  p-2 sm:p-4  text-center">
+                      <img
+                        src={tech.img}
+                        alt={tech.name}
+                        className="max-h-16 sm:max-h-20 md:max-h-24 lg:max-h-28 max-w-full object-contain"
+                      />
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </>
           ) : (
-            <p className="col-span-2 sm:col-span-3 md:col-span-4 lg:col-span-5 text-lg text-red-500">No technologies available in this category.</p>
+            <p className="text-lg text-red-500">No technologies available in this category.</p>
           )}
         </div>
       </div>
