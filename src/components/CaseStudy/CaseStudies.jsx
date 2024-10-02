@@ -25,13 +25,13 @@ const caseStudies = [
 const CaseStudies = () => {
   return (
     <div className="bg-white">
-      <div className='flex flex-col items-center'>
-        <div className='bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5 mb-10'>
-        </div>
-        <span className="text-4xl block leading-relaxed">Our recent</span>
-        <h1 className="text-4xl font-bold leading-relaxed">Case studies</h1>
+      <div className="flex flex-col items-center mb-10">
+        <div className="bg-[linear-gradient(to_right,_#004589,_#00A1F1)] w-24 h-1.5 mb-10" />
+        <span className="text-3xl md:text-4xl block leading-relaxed">Our recent</span>
+        <h1 className="text-3xl md:text-4xl font-bold leading-relaxed">Case studies</h1>
       </div>
-      <div className="flex flex-col w-full py-10 px-16">
+
+      <div className="flex flex-col w-full py-10 px-6 md:px-16">
         {caseStudies.map((caseStudy, index) => (
           <CaseStudyCard
             key={index}
@@ -40,15 +40,17 @@ const CaseStudies = () => {
             description={caseStudy.description}
           />
         ))}
-        <div className="self-end mt-4">
-          <a href="#" className="flex items-center bg-custom-gradient text-transparent bg-clip-text text-xl font-semibold">
+
+        <div className="self-end mt-4 text-center">
+          <a
+            href="#"
+            className="flex items-center justify-center bg-custom-gradient text-transparent bg-clip-text text-xl font-semibold"
+          >
             Read more case studies
             <img src="./arrow1.svg" alt="arrow" className="ml-2" />
           </a>
         </div>
-
       </div>
-
     </div>
   );
 };

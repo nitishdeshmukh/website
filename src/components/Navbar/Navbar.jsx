@@ -48,7 +48,9 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <Button className="hidden md:block">Contact Us</Button>
+      <Button className="hidden md:block">
+            <Link to="link" smooth={true} duration={500} className="cursor-pointer" onClick={toggleMenu}>Contact Us</Link>
+      </Button>
 
       {/* Mobile Menu Button */}
       {!isMenuOpen && (
@@ -94,7 +96,9 @@ const Navbar = () => {
               Hire
             </Link>
           </li>
-          <Button className="block md:hidden">Contact Us</Button>
+          <Button className="block md:hidden">
+            <Link to="link" smooth={true} duration={500} className="cursor-pointer" onClick={toggleMenu}>Contact Us</Link>
+          </Button>
           <button onClick={toggleMenu} className="text-gray-800 focus:outline-none mt-4">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>

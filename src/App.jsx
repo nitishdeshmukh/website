@@ -88,9 +88,9 @@ function App() {
         <FeaturedResources></FeaturedResources>
       </Section>
       <Section id='hire' className=' min-h-[50vh] flex justify-center items-center'>
-        <div className='container mx-20 px-4 py-8 bg-sky-50 rounded-xl h-auto md:h-2/3 flex flex-col md:flex-row justify-center md:justify-around items-center'>
+        <div className='container md:mx-20 mx-4 md:px-4 md:py-8 bg-sky-50 rounded-xl h-auto md:h-2/3 flex flex-col md:flex-row justify-center md:justify-around items-center pb-5'>
           <div className='text-center md:text-left mb-6 md:mb-0'>
-            <span className='text-2xl md:text-3xl font-bold block leading-relaxed'>
+            <span className='text-2xl mt-4 md:text-3xl font-bold block leading-relaxed'>
               Hire the best developers and
             </span>
             <span className='text-2xl md:text-3xl font-bold block leading-relaxed'>
@@ -108,7 +108,9 @@ function App() {
           </div>
         </div>
       </Section>
-      <Footer />
+      <Section id='link'>
+        <Footer />
+      </Section>
       <BackToTop/>
     </>
   )

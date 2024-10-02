@@ -16,7 +16,6 @@ const categories = ['Backend', 'Frontend', 'Databases', 'CMS', 'Cloud Testing', 
 
 const TechStack = () => {
   const [selectedCategory, setSelectedCategory] = useState('Backend');
-  const defaultRowPattern = [5, 4, 3]; 
   const filteredTechStack = techStack.filter((tech) => tech.category === selectedCategory);
 
   const generateDynamicRowPattern = (totalItems) => {

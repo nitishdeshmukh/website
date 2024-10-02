@@ -6,32 +6,27 @@ const AboutUs = () => {
         <div className='pt-20 m-5 lg:pt-30'>
             <div className="flex flex-col lg:flex-row items-center justify-center w-full h-full">
                 {/* Left Side */}
-                <div className="max-w-3xl lg:ml-14">
+                <div className="max-w-3xl lg:ml-10">
                     <div>
-                        <p className="text-2xl lg:text-6xl text-start space-y-1">
+                        <p className="text-2xl text-center lg:text-6xl lg:text-start space-y-1">
                             <span className='font-light leading-normal mr-4'>Exceptional</span>
                             <span className="bg-custom-gradient text-transparent bg-clip-text font-extrabold inline-block leading-normal mr-4">Product</span>
                             <span className='font-light inline-block leading-normal'>starts</span>
                         </p>
-                        <p className="text-2xl lg:text-6xl text-start space-y-1">
+                        <p className="text-2xl text-center lg:text-6xl lg:text-start space-y-1">
                             <span className="font-extrabold leading-normal mr-4">with</span>
                             <span className="font-extrabold leading-normal mr-4">Exceptional</span>
                             <span className="bg-custom-gradient text-transparent bg-clip-text font-extrabold leading-normal">teams</span>
                         </p>
-                        <div className="text-lg lg:text-lg text-balance w-full lg:w-11/12 text-gray-700 mt-4 lg:mt-10 mb-8">
+                        <div className="text-lg text-center lg:text-start lg:text-lg text-balance w-full lg:w-11/12 text-gray-700 mt-4 lg:mt-10 mb-8">
                             <span className='leading-loose'>
-                            At RDK Technologies, we specialize in building and managing top-tier
-                            development teams dedicated to turning your vision into reality. Our
-                            world-class developers are experts in their fields, ensuring that your
-                            project benefits from cutting-edge technology and innovative
-                            solutions.
+                                At RDK Technologies, we specialize in building and managing top-tier development teams dedicated to turning your vision into reality. Our world-class developers are experts in their fields, ensuring that your project benefits from cutting-edge technology and innovative solutions.
                             </span>
                         </div>
                     </div>
-                    <div className='mt-28'>
-                        <Button >Let’s get started today!</Button>
+                    <div className='flex justify-center lg:justify-normal lg:mt-28'>
+                        <Button className="block">Let’s get started today!</Button>
                     </div>
-                    
                 </div>
 
                 {/* Right Side */}

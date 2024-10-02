@@ -63,7 +63,7 @@ const FeaturedResources = () => {
     <div className="w-full min-h-[40vh] py-16">
       <div className="min-w-full">
         <div className="flex flex-col items-center lg:pb-16">
-          <div className="bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5 mb-10"></div>
+          <div className="bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5 lg:mb-10 mb-12"></div>
           <span className="text-2xl md:text-3xl lg:text-4xl block leading-relaxed">Featured</span>
           <h1 className="text-4xl font-bold leading-relaxed">Resources</h1>
         </div>

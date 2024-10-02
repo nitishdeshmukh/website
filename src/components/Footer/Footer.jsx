@@ -38,7 +38,7 @@ const Footer = () => {
 
           {/* Right Section */}
           <div className="text-center mt-8 md:mt-0 md:ml-16 lg:ml-20">
-            <ul className="text-left space-y-2 font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#00A1F1] to-[#004589]">
+            <ul className="text-center md:text-left space-y-2 font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#00A1F1] to-[#004589]">
               <li className='text-sky-950'>Links</li>
               <li><a href="#about">About Us</a></li>
               <li><a href="#services">Services</a></li>

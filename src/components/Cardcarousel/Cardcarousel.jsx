@@ -55,7 +55,7 @@ const Cardcarousel = () => {
   ];
 
   return (
-    <div className="w-full h-[80vh] bg-custom-bg bg-opacity-60 py-16">
+    <div className="w-full min-h-[55vh] bg-custom-bg bg-opacity-60 py-16">
       <div className="max-w-8xl mx-auto">
       <h2 className="text-4xl font-bold text-center text-custom-blue mb-8 relative">
         <span className="absolute inset-0 opacity-20 rounded"></span>
