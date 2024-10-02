@@ -3,7 +3,7 @@ import Button from './Button';
 
 const AboutUs = () => {
     return (
-        <div className='pt-20 m-5 lg:pt-30'>
+        <div className=''>
             <div className="flex flex-col lg:flex-row items-center justify-center w-full h-full">
                 {/* Left Side */}
                 <div className="max-w-3xl lg:ml-10">
