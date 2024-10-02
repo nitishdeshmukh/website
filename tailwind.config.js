@@ -10,6 +10,7 @@ export default {
           'custom-text-bg':'#718096',
           'custom-bg': '#E4F0F8',
           'custom-blue': '#5382A1',
+          'custom-text': '#4A5568',
           'custom-gradiant-border':'linear-gradient(225deg, #005398 0%, #00A7F7 100%)',
         },
         backgroundImage: {

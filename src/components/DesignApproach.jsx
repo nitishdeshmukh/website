@@ -5,43 +5,43 @@ const data = [
     title: "UX Driven Engineering",
     description:
       "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
-    icon: "Rocket.png",
-    style: " p-5 bg-custom-gradient-c1 rounded-xl",
+    icon: "Rocket.svg",
+    style: " h-14 w-32 bg-custom-gradient-c1 rounded-xl",
   },
   {
     title: "Developing Shared Understanding",
     description:
       "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
-    icon: "Codelogo.png",
-    style: " p-5 bg-custom-gradient-c2 rounded-xl",
+    icon: "Code.svg",
+    style: "h-14 w-32 bg-custom-gradient-c2 rounded-xl",
   },
   {
     title: "Proven Experience and Expertise",
     description:
       "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
-    icon: "Heart.png", 
-    style: " p-5 bg-custom-gradient-c3 rounded-xl",
+    icon: "Heart.svg", 
+    style: " h-14 w-32 bg-custom-gradient-c3 rounded-xl",
   },
   {
     title: "Security & Intellectual Property (IP)",
     description:
       "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
-    icon: "Shield.png", 
-    style: " p-5 bg-custom-gradient-c4 rounded-xl",
+    icon: "Shield.svg", 
+    style: " h-14 w-32 bg-custom-gradient-c4 rounded-xl",
   },
   {
     title: "Code Reviews",
     description:
       "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
-    icon: "Success.png", 
-    style: " p-5 bg-custom-gradient-c5 rounded-xl",
+    icon: "Success.svg", 
+    style: " h-14 w-32 bg-custom-gradient-c5 rounded-xl",
   },
   {
     title: "Quality Assurance & Testing",
     description:
       "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
-    icon: "Padlock.png", 
-    style: " p-5 bg-custom-gradient-c6 rounded-xl",
+    icon: "Padlock.svg", 
+    style: "h-14 w-32  bg-custom-gradient-c6 rounded-xl",
   },
 ];
 
@@ -66,8 +66,8 @@ const DesignApproach = () => {
               }}
             >
               {/* Icon */}
-              <div className={item.style}>
-                <img src={item.icon} alt="icon" className=''/>
+              <div className={`flex items-center justify-center ${item.style}`}>
+                <img src={item.icon} alt="icon" className=' max-w-full max-h-full object-fill'/>
               </div>
               {/* Content */}
               <div className='text-start pl-5'>

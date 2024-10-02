@@ -7,7 +7,6 @@ const Cardcarousel = () => {
   const settings = {
     centerMode: true,
     centerPadding: '180px',  
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -69,7 +68,7 @@ const Cardcarousel = () => {
               <div className="h-full bg-white shadow-md rounded-lg p-6 flex flex-col justify-between transform hover:translate-y-3 transition duration-300 border-2 border-transparent group-hover:border-sky-700">
                 <div className="w-16 h-16 rounded-full bg-white p-[2px] border-2 border-sky-700">
                   <div className="flex items-center justify-center w-full h-full bg-white rounded-full">
-                    <img src="Codelogo.png" alt="Logo" className="w-9 h-9" />
+                    <img src="Code.svg" alt="Logo" className="w-9 h-9"/>
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-gray-800">{card.title}</h3>

@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
 const techStack = [
-  { name: 'Node.js', img: './node.png', category: 'Backend' },
-  { name: 'PHP', img: './php.png', category: 'Backend' },
-  { name: 'MySQL', img: './mysql.png', category: 'Backend' },
-  { name: 'Java', img: './Java.png', category: 'Backend' },
-  { name: '.NET Core', img: './NETCore.png', category: 'Backend' },
-  { name: 'Python', img: './Python.png', category: 'Backend' },
-  { name: 'Rails', img: './RubyOnRails.png', category: 'Backend' },
-  { name: 'Golang', img: './Go.png', category: 'Backend' },
-  { name: 'MongoDB', img: './mongodb.png', category: 'Databases' },
+  { name: 'Node.js', img: './node.svg', category: 'Backend' },
+  { name: 'PHP', img: './php.svg', category: 'Backend' },
+  { name: 'MySQL', img: './mysql.svg', category: 'Backend' },
+  { name: 'Java', img: './Java.svg', category: 'Backend' },
+  { name: '.NET Core', img: './NETCore.svg', category: 'Backend' },
+  { name: 'Python', img: './Python.svg', category: 'Backend' },
+  { name: 'Rails', img: './RubyOnRails.svg', category: 'Backend' },
+  { name: 'Golang', img: './Go.svg', category: 'Backend' },
+  { name: 'MongoDB', img: './mongodb.svg', category: 'Databases' },
 ];
 
 const categories = ['Backend', 'Frontend', 'Databases', 'CMS', 'Cloud Testing', 'DevOps'];

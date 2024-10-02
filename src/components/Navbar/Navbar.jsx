@@ -15,33 +15,33 @@ const Navbar = () => {
         <img src="logo.png" alt="Logo" className="w-24 md:w-32" />
       </div>
 
-      <ul className='md:flex space-x-4 md:space-x-8 text-sm md:text-lg font-semibold hidden md:block'>
-        <li className="hover:text-sky-800">
+      <ul className='lg:flex space-x-4 lg:space-x-8 text-sm lg:text-lg font-medium hidden lg:block text-custom-text'>
+        <li className="hover:text-sky-600">
           <Link to="about" smooth={true} duration={500} className="cursor-pointer">
             About Us
           </Link>
         </li>
-        <li className="hover:text-sky-800">
+        <li className="hover:text-sky-600">
           <Link to="services" smooth={true} duration={500} className="cursor-pointer">
             Services
           </Link>
         </li>
-        <li className="hover:text-sky-800">
+        <li className="hover:text-sky-600">
           <Link to="caseStudies" smooth={true} duration={500} className="cursor-pointer">
             Case Studies
           </Link>
         </li>
-        <li className="hover:text-sky-800">
+        <li className="hover:text-sky-600">
           <Link to="blog" smooth={true} duration={500} className="cursor-pointer">
             Blog
           </Link>
         </li>
-        <li className="hover:text-sky-800">
+        <li className="hover:text-sky-600">
           <Link to="howItWorks" smooth={true} duration={500} className="cursor-pointer">
             How it Works
           </Link>
         </li>
-        <li className="hover:text-sky-800">
+        <li className="hover:text-sky-600">
           <Link to="hire" smooth={true} duration={500} className="cursor-pointer">
             Hire
           </Link>
@@ -64,32 +64,32 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <ul className="absolute top-16 left-0 w-full bg-white shadow-md flex flex-col items-center space-y-4 py-4 md:hidden">
-          <li className="hover:text-sky-800">
+          <li className="hover:text-sky-600">
             <Link to="about" smooth={true} duration={500} className="cursor-pointer" onClick={toggleMenu}>
               About Us
             </Link>
           </li>
-          <li className="hover:text-sky-800">
+          <li className="hover:text-sky-600">
             <Link to="services" smooth={true} duration={500} className="cursor-pointer" onClick={toggleMenu}>
               Services2
             </Link>
           </li>
-          <li className="hover:text-sky-800">
+          <li className="hover:text-sky-600">
             <Link to="caseStudies" smooth={true} duration={500} className="cursor-pointer" onClick={toggleMenu}>
               Case Studies2
             </Link>
           </li>
-          <li className="hover:text-sky-800">
+          <li className="hover:text-sky-600">
             <Link to="blog" smooth={true} duration={500} className="cursor-pointer" onClick={toggleMenu}>
               Blog
             </Link>
           </li>
-          <li className="hover:text-sky-800">
+          <li className="hover:text-sky-600">
             <Link to="howItWorks" smooth={true} duration={500} className="cursor-pointer" onClick={toggleMenu}>
               How it Works
             </Link>
           </li>
-          <li className="hover:text-sky-800">
+          <li className="hover:text-sky-600">
             <Link to="hire" smooth={true} duration={500} className="cursor-pointer" onClick={toggleMenu}>
               Hire
             </Link>

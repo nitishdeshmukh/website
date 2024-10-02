@@ -5,10 +5,20 @@ html, body {
     background: #FFFFFF;
   }
   
-  body {
-    overflow-y: scroll; /* Ensure vertical scroll is always visible */
-  }
-  
   * {
     box-sizing: border-box;
   }
+
+  .swiper-button-next {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+  }
+  
+  .swiper-button-prev {
+    position: absolute;
+    right: 50%;
+    top: 10%;
+    transform: translateX(50%);
+  }  

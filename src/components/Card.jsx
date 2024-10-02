@@ -51,13 +51,23 @@ const Card = () => {
       {cards.map((card, index) => (
         <div
           key={index}
-          className={`flex flex-col mb-10 items-start justify-start sm:justify-around sm:mb-16 ${index % 2 === 0 ? "" : "md:flex-row-reverse"} md:flex-row`}
+          className={`relative flex flex-col mb-10 items-start justify-start sm:justify-around sm:mb-16 ${index % 2 === 0 ? "" : "md:flex-row-reverse"} md:flex-row`}
         >
+
+          {/* Elliptical Backgrounds */}
+          <div className={`absolute ${index % 2 === 0 ? "lg:left-[4.5%] lg:top-[-26px]" : "lg:right-[-1.5%] lg:top-[-26px]"}   w-1/2 z-10`}>
+            <img src="./Ellipse1.svg" alt="ellipse1" />
+          </div>
+          <div className={`absolute ${index % 2 === 0 ? "lg:left-[33%] lg:top-[95%]" : "lg:right-[-30%] lg:top-[95%]"}   w-1/2 z-10`}>
+            <img src="./Ellipse2.svg" alt="ellipse1" />
+          </div>
+
           {/* Image */}
+          
           <img
             src={card.image}
             alt="Card"
-            className="w-full sm:w-3/4 md:w-2/5 rounded-lg mb-6 sm:mb-0"
+            className="w-full sm:w-3/4 md:w-2/5 rounded-lg mb-6 sm:mb-0 z-20"
           />
 
           {/* Text and Author */}

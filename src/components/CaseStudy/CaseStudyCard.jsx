@@ -21,7 +21,7 @@ const CaseStudyCard = ({ image, title, description }) => {
         <div className="self-end mt-8">
           <a href="#" className="flex items-center bg-custom-gradient text-transparent bg-clip-text text-xl font-semibold">
             Read more
-            <img src="./Vector4.png" alt="arrow" className="ml-2" />
+            <img src="./arrow1.svg" alt="arrow" className="ml-2" />
           </a>
         </div>
       </div>

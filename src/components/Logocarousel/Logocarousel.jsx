@@ -39,19 +39,19 @@ const LogoCarousel = () => {
     <div className="bg-sky-50 h-[30vh]  flrx items-center justify-center pt-16">
       <Slider {...settings}>
         <div className="flex justify-center items-center h-full">
-          <img src="logo6.png" alt="Logo 6" className="h-[80px] object-contain" />
+          <img src="Logo6.svg" alt="Logo 6" className="max-w-full max-h-full object-contain" />
         </div>
         <div className="flex justify-center items-center h-full">
-          <img src="logo5.png" alt="Logo 5" className="h-[80px] object-contain" />
+          <img src="logo2.svg" alt="Logo 5" className="max-w-full max-h-full object-contain" />
         </div>
         <div className="flex justify-center items-center h-full">
-          <img src="logo7.png" alt="Logo 7" className="h-[80px] object-contain" />
+          <img src="logo3.svg" alt="Logo 7" className="max-w-full max-h-full object-contain" />
         </div>
         <div className="flex justify-center items-center h-full">
-          <img src="logo8.png" alt="Logo 8" className="h-[80px] object-contain" />
+          <img src="Logo4.svg" alt="Logo 8" className="max-w-full max-h-full object-contain" />
         </div>
         <div className="flex justify-center items-center h-full">
-          <img src="logo9.png" alt="Logo 9" className="h-[80px] object-contain" />
+          <img src="logo5.svg" alt="Logo 9" className="max-w-full max-h-full object-contain" />
         </div>
       </Slider>
     </div>

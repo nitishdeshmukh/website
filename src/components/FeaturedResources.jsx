@@ -99,7 +99,7 @@ const FeaturedResources = () => {
                 <div className="self-end flex mt-4 justify-end mr-4">
                   <a href="#" className="flex items-center bg-custom-gradient text-transparent bg-clip-text text-base font-bold">
                     Read More
-                    <img src="./Vector.png" alt="arrow" className="ml-2" />
+                    <img src="./arrow.svg" alt="arrow" className="ml-2" />
                   </a>
                 </div>
               </div>

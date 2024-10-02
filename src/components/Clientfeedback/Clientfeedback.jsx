@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';  
 import 'swiper/css/autoplay';  
-import { Autoplay, Mousewheel } from 'swiper/modules';
+import { Autoplay, Mousewheel,Navigation } from 'swiper/modules';
 
 const Clientfeedback = () => {
     const [activeFeedback, setActiveFeedback] = useState('');  
@@ -65,7 +65,7 @@ const Clientfeedback = () => {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center min-h-screen bg-white px-4">
+        <div className="flex flex-col justify-center items-center min-h-screen bg-white px-4 pt-20">
             <div className="text-center w-full max-w-screen-lg">
                 <div className='flex flex-col items-center'>
                     <div className='bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5 mb-10'>
@@ -74,19 +74,19 @@ const Clientfeedback = () => {
                     <span className="text-4xl font-bold leading-relaxed">working with us</span>
                 </div>
                 <div className='relative'>
-                    <div className='absolute top-0 left-0'>
-                        <img src="./Vector2.png" alt="quote icon" />
+                    <div className='absolute top-0 left-40'>
+                        <img src="./qoute1.svg" alt="quote icon" />
                     </div>
                     <p className="text-xl text-custom-text-bg mb-6 max-w-lg mx-auto leading-loose mt-16">
                         {activeFeedback} 
                     </p>
-                    <div className='absolute bottom-0 right-0'>
-                        <img src="./Vector3.png" alt="quote icon" />
+                    <div className='absolute bottom-0 right-40'>
+                        <img src="./qoute2.svg" alt="quote icon" />
                     </div>
                 </div>
                 <div className="relative w-full">
                     <Swiper
-                        modules={[Autoplay, Mousewheel]}  
+                        modules={[Autoplay, Mousewheel, Navigation]}  
                         spaceBetween={10}  
                         slidesPerView={1}  
                         mousewheel={false}
@@ -96,7 +96,12 @@ const Clientfeedback = () => {
                             delay: 5000,  
                             disableOnInteraction: false  
                         }}
-                        onSlideChange={handleSlideChange}  
+                        onSlideChange={handleSlideChange} 
+                        navigation ={true}  
+                        // navigation={{ 
+                        //     prevEl: '.swiper-button-prev', 
+                        //     nextEl: '.swiper-button-next' 
+                        //  }}
                         className="feedback-slider w-full"
                         breakpoints={{
                             640: { slidesPerView: 1, spaceBetween: 10 },  // Mobile
@@ -106,23 +111,35 @@ const Clientfeedback = () => {
                         }}
                     >
                         {feedbackData.map((client, index) => (
-                            <SwiperSlide key={index} className="feedback-slide bg-transparent">
-                                <div className="flex flex-col items-center">
-                                    <img 
-                                        src={client.image} 
-                                        alt={client.name} 
-                                        className="w-20 h-20 rounded-full mx-auto mb-4" 
-                                    />
-                                    <h3 className="text-xl font-semibold bg-custom-gradient text-transparent bg-clip-text">{client.name}</h3>
-                                    <p className="text-gray-500 italic mb-2">{client.role}</p>
-                                    
-                                    <div className="text-yellow-500">
-                                        {'★'.repeat(client.rating)}{'☆'.repeat(5 - client.rating)}
+                            <div>
+                                <SwiperSlide key={index} className="feedback-slide bg-transparent">
+                                    <div className="flex flex-col items-center">
+                                        <img 
+                                            src={client.image} 
+                                            alt={client.name} 
+                                            className="w-20 h-20 rounded-full mx-auto mb-4" 
+                                        />
+                                        <h3 className="text-xl font-semibold bg-custom-gradient text-transparent bg-clip-text">{client.name}</h3>
+                                        <p className="text-gray-500 italic mb-2">{client.role}</p>
+                                        
+                                        <div className="text-yellow-500">
+                                            {'★'.repeat(client.rating)}{'☆'.repeat(5 - client.rating)}
+                                        </div>
                                     </div>
-                                </div>
-                            </SwiperSlide>
+                                </SwiperSlide>
+                            </div>
+                            
                         ))}
                     </Swiper>
+                </div>
+                <div className="flex justify-between w-full mt-8 items-center relative">
+                    <div className="flex items-center cursor-pointer relative">
+                        <img src="./Deco-img-arrow.svg" alt="Arrow left"className="mr-2"/>
+                        <img src="Ellipse.svg" alt="Ellipse 1" className="absolute left-56 bottom-0"/>
+                    </div>
+                    <div className="flex items-center cursor-pointer">
+                        <img src="./Deco-img-arrow1.svg" alt="Arrow right" className="ml-2" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -130,3 +147,39 @@ const Clientfeedback = () => {
 };
 
 export default Clientfeedback;
+
+// import React, { useState } from 'react';
+
+// import { Swiper, SwiperSlide } from 'swiper/react';
+
+// // Import Swiper styles
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+
+// import 'swiper/css';
+
+// // import required modules
+// import { Pagination, Navigation } from 'swiper/modules';
+
+// export default function Clientfeedback() {
+//   return (
+//     <>
+//       <Swiper
+//         pagination={true}
+//         navigation={true}
+//         modules={[Pagination, Navigation]}
+//         className="mySwiper"
+//       >
+//         <SwiperSlide>Slide 1</SwiperSlide>
+//         <SwiperSlide>Slide 2</SwiperSlide>
+//         <SwiperSlide>Slide 3</SwiperSlide>
+//         <SwiperSlide>Slide 4</SwiperSlide>
+//         <SwiperSlide>Slide 5</SwiperSlide>
+//         <SwiperSlide>Slide 6</SwiperSlide>
+//         <SwiperSlide>Slide 7</SwiperSlide>
+//         <SwiperSlide>Slide 8</SwiperSlide>
+//         <SwiperSlide>Slide 9</SwiperSlide>
+//       </Swiper>
+//     </>
+//   );
+// }

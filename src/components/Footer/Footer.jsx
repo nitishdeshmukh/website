@@ -22,16 +22,16 @@ const Footer = () => {
             {/* Social Media Icons */}
             <div className="flex justify-center md:justify-start space-x-4 mt-4">
               <a href="https://facebook.com" className="p-3 rounded-full shadow-lg hover:shadow-xl transition-shadow">
-                <img src="/facebook.png" alt="Facebook" className="max-w-fit object-contain" />
+                <img src="/facebook.svg" alt="Facebook" className="max-w-fit object-contain" />
               </a>
               <a href="https://instagram.com" className="p-3 rounded-full shadow-lg hover:shadow-xl transition-shadow">
-                <img src="/instagram.png" alt="Instagram" className="max-w-fit object-contain" />
+                <img src="/instagram.svg" alt="Instagram" className="max-w-fit object-contain" />
               </a>
               <a href="https://twitter.com" className="p-3 rounded-full shadow-lg hover:shadow-xl transition-shadow">
-                <img src="/twitter.png" alt="Twitter" className="max-w-fit object-contain" />
+                <img src="/twitter.svg" alt="Twitter" className="max-w-fit object-contain" />
               </a>
               <a href="https://linkedin.com" className="p-3 rounded-full shadow-lg hover:shadow-xl transition-shadow">
-                <img src="/linkedin.png" alt="LinkedIn" className="max-w-fit object-contain" />
+                <img src="/linkedin.svg" alt="LinkedIn" className="max-w-fit object-contain" />
               </a>
             </div>
           </div>
