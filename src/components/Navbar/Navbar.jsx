@@ -71,12 +71,12 @@ const Navbar = () => {
           </li>
           <li className="hover:text-sky-600">
             <Link to="services" smooth={true} duration={500} className="cursor-pointer" onClick={toggleMenu}>
-              Services2
+              Services
             </Link>
           </li>
           <li className="hover:text-sky-600">
             <Link to="caseStudies" smooth={true} duration={500} className="cursor-pointer" onClick={toggleMenu}>
-              Case Studies2
+              Case Studies
             </Link>
           </li>
           <li className="hover:text-sky-600">
