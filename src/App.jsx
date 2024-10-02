@@ -15,9 +15,10 @@ function App() {
         </div>
         <div className="min-h-screen flex flex-col lg:flex-row items-center justify-around p-4 lg:p-8">
           <div className="max-w-xl w-full lg:w-1/2 space-y-6">
-            <div className='bg-[linear-gradient(to_right,_#004589,_#00A1F1)] w-24 h-1.5'></div>
+            <div className='bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5 mb-4 ml-28 mt-3 lg:ml-0 lg:mt-0'></div>
 
-            <div className='text-start'>
+            {/* Text Section */}
+            <div className='text-center lg:text-start'>
               <span className="text-2xl sm:text-3xl lg:text-4xl block lg:leading-relaxed">Leading companies trust us</span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold block lg:leading-loose">to develop software</h2>
             </div>
@@ -51,9 +52,10 @@ function App() {
         </div>
         <div className='flex flex-col'>
           <div className='min-h-10 flex flex-col items-start justify-around pl-16 space-y-6'>
-            <div className='bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5'>
-            </div>
-            <div className='text-start'>
+            <div className='bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5 mb-4 ml-20 mt-3 lg:ml-0 lg:mt-0'></div>
+
+            {/* Text Section */}
+            <div className='text-center lg:text-start pb-10'>
               <span className="text-2xl sm:text-3xl lg:text-4xl block lg:leading-relaxed">Meet the People</span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold block lg:leading-loose">We are Working With</h2>
             </div>
@@ -79,13 +81,13 @@ function App() {
       <Section id='blog' className='min-h-[260vh]'>
         <Card/>
       </Section>
-      <Section id='howItWorks' className='max-h-[440vh]'>
+      <Section id='howItWorks' className='min-h-[440vh]'>
         <DesignApproach></DesignApproach>
         <TechStack></TechStack>
         <AlkalineDevelopment></AlkalineDevelopment>
         <FeaturedResources></FeaturedResources>
       </Section>
-      <Section id='hire' className=' h-auto md:h-[50vh] flex justify-center items-center'>
+      <Section id='hire' className=' min-h-[50vh] flex justify-center items-center'>
         <div className='container mx-20 px-4 py-8 bg-sky-50 rounded-xl h-auto md:h-2/3 flex flex-col md:flex-row justify-center md:justify-around items-center'>
           <div className='text-center md:text-left mb-6 md:mb-0'>
             <span className='text-2xl md:text-3xl font-bold block leading-relaxed'>
@@ -97,9 +99,9 @@ function App() {
           </div>
           <div>
           <div className="relative w-full max-w-md mx-auto">
-              <img src="./sparking.svg" alt="sparking" className="w-full rounded-lg" />
+              <img src="./sparking.svg" alt="sparking" className="h-1/2 md:w-full rounded-lg" />
               
-              <button className="absolute bottom-16 left-1/2 transform -translate-x-1/2 bg-custom-gradient-btn text-white px-12 py-4 rounded-md text-xl whitespace-nowrap">
+              <button className="text-base px-4 py-2 absolute bottom-16 left-1/2 transform -translate-x-1/2 bg-custom-gradient-btn text-white md:px-12 md:py-4 rounded-md md:text-xl whitespace-nowrap">
                   Hire Top Developers
               </button>
           </div>

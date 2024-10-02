@@ -74,13 +74,13 @@ const Clientfeedback = () => {
                     <span className="text-4xl font-bold leading-relaxed">working with us</span>
                 </div>
                 <div className='relative'>
-                    <div className='absolute top-0 left-40'>
+                    <div className='absolute lg:top-0 lg:left-40 top-0 left-0'>
                         <img src="./qoute1.svg" alt="quote icon" />
                     </div>
                     <p className="text-xl text-custom-text-bg mb-6 max-w-lg mx-auto leading-loose mt-16">
                         {activeFeedback} 
                     </p>
-                    <div className='absolute bottom-0 right-40'>
+                    <div className='absolute lg:bottom-0 lg:right-40 bottom-0 right-0'>
                         <img src="./qoute2.svg" alt="quote icon" />
                     </div>
                 </div>
@@ -133,11 +133,11 @@ const Clientfeedback = () => {
                     </Swiper>
                 </div>
                 <div className="flex justify-between w-full mt-8 items-center relative">
-                    <div className="flex items-center cursor-pointer relative">
-                        <img src="./Deco-img-arrow.svg" alt="Arrow left"className="mr-2"/>
-                        <img src="Ellipse.svg" alt="Ellipse 1" className="absolute left-56 bottom-0"/>
+                    <div className=" hidden lg:flex lg:items-center lg:cursor-pointer lg:relative">
+                        <img src="./Deco-img-arrow.svg" alt="Arrow left"className=" mr-2 "/>
+                        <img src="Ellipse.svg" alt="Ellipse 1" className=" absolute left-56 bottom-0"/>
                     </div>
-                    <div className="flex items-center cursor-pointer">
+                    <div className="hidden lg:flex lg:items-center lg:cursor-pointer ">
                         <img src="./Deco-img-arrow1.svg" alt="Arrow right" className="ml-2" />
                     </div>
                 </div>

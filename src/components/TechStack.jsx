@@ -56,7 +56,7 @@ const TechStack = () => {
   return (
     <div className="container mx-auto text-center pt-10 mb-24 px-4 sm:px-6 lg:px-8">
       {/* Header Section */}
-      <div className="text-center pt-16 flex flex-col justify-center items-center pb-5">
+      <div className="flex flex-col items-center">
         <div className="bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5 mb-10"></div>
         <span className="text-2xl md:text-3xl lg:text-4xl block leading-relaxed">Our</span>
         <h1 className="text-4xl font-bold leading-relaxed">Tech Stack</h1>

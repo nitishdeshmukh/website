@@ -40,7 +40,7 @@ const Card = () => {
   return (
     <div className="mx-auto px-4 py-12 lg:px-10 ">
       {/* Header */}
-      <div className='text-center pt-16 flex flex-col justify-center items-center pb-5'>
+      <div className='flex flex-col items-center pb-16'>
         <div className='bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5 mb-10'>
         </div>
         <span className="text-4xl block leading-relaxed">Way of building</span>
