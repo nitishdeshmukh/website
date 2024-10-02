@@ -65,7 +65,7 @@ const Clientfeedback = () => {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center min-h-screen bg-white px-4 pt-20">
+        <div className="flex flex-col justify-center items-center min-h-screen bg-white px-4 pt-20 pb-16">
             <div className="text-center w-full max-w-screen-lg">
                 <div className='flex flex-col items-center'>
                     <div className='bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5 mb-10'>
@@ -132,7 +132,7 @@ const Clientfeedback = () => {
                         ))}
                     </Swiper>
                 </div>
-                <div className="flex justify-between w-full mt-8 items-center relative">
+                {/* <div className="flex justify-between w-full mt-8 items-center relative">
                     <div className=" hidden lg:flex lg:items-center lg:cursor-pointer lg:relative">
                         <img src="./Deco-img-arrow.svg" alt="Arrow left"className=" mr-2 "/>
                         <img src="Ellipse.svg" alt="Ellipse 1" className=" absolute left-56 bottom-0"/>
@@ -140,7 +140,7 @@ const Clientfeedback = () => {
                     <div className="hidden lg:flex lg:items-center lg:cursor-pointer ">
                         <img src="./Deco-img-arrow1.svg" alt="Arrow right" className="ml-2" />
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

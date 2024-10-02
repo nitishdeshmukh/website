@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Section id="about" className="lg:pb-20 lg:pt-2 min-h-screen">
+      <Section id="about" className=" min-h-screen">
         <AboutUs/>
       </Section>
 
@@ -15,7 +15,7 @@ function App() {
         </div>
         <div className="min-h-screen flex flex-col lg:flex-row items-center justify-around p-4 lg:p-8">
           <div className="max-w-xl w-full lg:w-1/2 space-y-6">
-            <div className='bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5 mb-4 ml-28 mt-3 lg:ml-0 lg:mt-0'></div>
+            <div className='bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-1.5 mb-4 ml-32 mt-3 lg:ml-0 lg:mt-0'></div>
 
             {/* Text Section */}
             <div className='text-center lg:text-start'>
