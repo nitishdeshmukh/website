@@ -81,7 +81,7 @@ function App() {
       <Section id='blog' className='min-h-[260vh]'>
         <Card/>
       </Section>
-      <Section id='howItWorks' className='min-h-[440vh]'>
+      <Section id='howItWorks' className='min-h-[300vh]'>
         <DesignApproach></DesignApproach>
         <TechStack></TechStack>
         <AlkalineDevelopment></AlkalineDevelopment>
