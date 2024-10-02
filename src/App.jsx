@@ -5,11 +5,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <Section id="about" className=" min-h-screen">
+      <Section id="about" className="pt-20 lg:pt-30 min-h-screen">
         <AboutUs/>
       </Section>
 
-      <Section id='services'className='min-h-[310vh]'>
+      <Section id='services'className='min-h-[310vh] pt-16'>
         <div>
           <Cardcarousel></Cardcarousel>
         </div>
@@ -60,34 +60,26 @@ function App() {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold block lg:leading-loose">We are Working With</h2>
             </div>
           </div>
-          {/* <div className='min-h-10 flex flex-col items-end justify-around pr-16 space-y-6'>
-            <div className='bg-[linear-gradient(to_right,_#004589,_#00A1F1)] to-pink-500 w-24 h-2'>
-            </div>
-            <div className='text-end'>
-              <span className="text-2xl sm:text-3xl lg:text-4xl block lg:leading-relaxed">Meet the People</span>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold block lg:leading-loose">We are Working With</h2>
-            </div>
-          </div> */}
         </div>
         <Logocarousel></Logocarousel>
         <Clientfeedback></Clientfeedback>
       </Section>
 
-      <Section id='caseStudies' className=' text-center'>
+      <Section id='caseStudies' className=' text-center pt-20'>
         <div>
           <CaseStudies></CaseStudies>
         </div>
       </Section>
-      <Section id='blog' className='min-h-[260vh]'>
+      <Section id='blog' className='min-h-[260vh] pt-10'>
         <Card/>
       </Section>
-      <Section id='howItWorks' className='min-h-[300vh]'>
+      <Section id='howItWorks' className='min-h-[300vh] pt-10'>
         <DesignApproach></DesignApproach>
         <TechStack></TechStack>
         <AlkalineDevelopment></AlkalineDevelopment>
         <FeaturedResources></FeaturedResources>
       </Section>
-      <Section id='hire' className=' min-h-[50vh] flex justify-center items-center'>
+      <Section id='hire' className=' min-h-[50vh] flex justify-center items-center pt-10'>
         <div className='container md:mx-20 mx-4 md:px-4 md:py-8 bg-sky-50 rounded-xl h-auto md:h-2/3 flex flex-col md:flex-row justify-center md:justify-around items-center pb-5'>
           <div className='text-center md:text-left mb-6 md:mb-0'>
             <span className='text-2xl mt-4 md:text-3xl font-bold block leading-relaxed'>
