@@ -132,15 +132,6 @@ const Clientfeedback = () => {
                         ))}
                     </Swiper>
                 </div>
-                {/* <div className="flex justify-between w-full mt-8 items-center relative">
-                    <div className=" hidden lg:flex lg:items-center lg:cursor-pointer lg:relative">
-                        <img src="./Deco-img-arrow.svg" alt="Arrow left"className=" mr-2 "/>
-                        <img src="Ellipse.svg" alt="Ellipse 1" className=" absolute left-56 bottom-0"/>
-                    </div>
-                    <div className="hidden lg:flex lg:items-center lg:cursor-pointer ">
-                        <img src="./Deco-img-arrow1.svg" alt="Arrow right" className="ml-2" />
-                    </div>
-                </div> */}
             </div>
         </div>
     );
